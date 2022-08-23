@@ -74,7 +74,7 @@
 .content_btn {
     background: #EC7979; 
     color: #fff; 
-    margin : 20px 0 0 20px;
+    margin : 20px 0 20px 0;
     padding: 1rem 1.5rem; 
     text-decoration: none; 
     border-radius: 3px; 
