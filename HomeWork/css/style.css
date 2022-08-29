@@ -240,16 +240,12 @@ h2{
     display: flex;
     align-items: center;
     padding: 20px 0px 20px 20px; 
-
 }
 
-.separator{
-    display: flex;
-    margin: 10px auto 30px;
-    width: 170px;     
-    border-top:  1px solid #EC7979;   
-}
-
-.separator::before{
+.pricing__title h2::before{
     content: ""; 
+    border: 1px solid #EC7979;
+    width: 170px; 
+    margin: 10px auto 30px;
+    display: inline-block;
 }
