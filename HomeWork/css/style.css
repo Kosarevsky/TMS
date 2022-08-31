@@ -62,12 +62,13 @@ h2{
     padding: 0 15px
 }
 
-.banner__content{
-    background-image: url("../img/banner_bg.png") ;
-    border: 1px solid red;
-    background-size: cover;
-}
+.banner__logo{
+    background-image: url("../img/banner_bg.png");
+    background-size: contain;
+    width: 1510px;
+    height: 1026px;
 
+}
 
 .tabs{
     display: flex;
