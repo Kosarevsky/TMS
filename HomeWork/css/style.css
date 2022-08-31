@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+    text-decoration: none;
 }
 h2{
     font-family: 'Raleway', sans-serif;
@@ -11,7 +12,48 @@ h2{
     font-size: 36px;
     line-height: 42px;
     text-transform: uppercase; 
-    padding : 30px 0 30px 0;
+    padding : 30px 0 80px 0;
+    position: relative;
+}
+
+.wrapper-big{
+    width: 1510px;
+    margin: 0 auto;
+}
+
+.header__content{
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 120px;
+
+}
+
+.header__logo{
+    margin: 20px 0px 20px 120px;
+}
+
+.navigation-list{
+    display: flex;
+}
+
+.navigation-list__item{
+    margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-transform:  capitalize;
+}
+
+.navigation-list__item a{
+    color: white;
 }
 
 .wrapper{
@@ -19,6 +61,13 @@ h2{
     width: 1170px;
     padding: 0 15px
 }
+
+.banner__content{
+    background-image: url("../img/banner_bg.png") ;
+    border: 1px solid red;
+    background-size: cover;
+}
+
 
 .tabs{
     display: flex;
@@ -98,7 +147,8 @@ h2{
     align-items: center;
 }
 
-.pricing{
+.pricing_customer{
+    padding: 30px 0 40px;
     background: #F5F5F5;
 }
 
@@ -114,11 +164,14 @@ h2{
     line-height: 21px;
     display: flex;
     justify-content: center; 
+    padding-top: 10px;
+    color: #86878B;
 }
 .pricing__wrap{
     display: flex;
     align-items: flex-end;
     margin-top: 35px;
+    justify-content: space-around;
 }
 
 .pricing__card {
@@ -136,8 +189,10 @@ h2{
 
 .pricing__card-top
 {
-    margin: 20px;
+
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+    position: relative;
+    top: -20px;
 }
 
 .pricing__card-title{
@@ -190,45 +245,51 @@ h2{
     padding: 10px; 
 }
 
-.customer{
-    padding: 30px 0 40px;
-}
-
 .customer__wrap{
     display: flex;
-    flex-direction: column;
     margin-top: 35px;
+    justify-content: space-between;
 }
 
 .customer__card{
-    display: flex;
-
-    justify-content: center;
-
-    width: 370px;
+    padding-top: 10px;
+    max-width: 370px;
+}
+.customer__card>p{
     background: #E2E2E2;
     border-radius: 10px; 
     padding: 38px 15px 37px 15px ;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    color: #86878B;
+    position: relative;
 }
 
-#customer__card__triangle-down {
-	width: 0;
-	height: 0;
-	border-left: 11px solid transparent;
-	border-right: 11px solid transparent;
-	border-top: 18px solid #E2E2E2;
-    margin-left: 50px;
+.customer__card>p::before{
+    content: "";
+    position: absolute;
+    border-left: 12px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 17px solid #E2E2E2;
+    position: absolute;
+    top: 180px;
+    left: 72px;
 }
 
 .customer__sub__card{
     display: flex;
+    margin-top: 50px;
 }
 
 .sub__card__img__circle{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-
 }
 
 .customer__subcard__name{
@@ -237,15 +298,28 @@ h2{
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
-    display: flex;
-    align-items: center;
-    padding: 20px 0px 20px 20px; 
+    display: block;
+    padding-left:20px; 
+}
+.customer__subcard__name h3{
+    padding: 15px 0px; 
+}
+
+.customer__subcard__name p{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
 }
 
 .pricing__title h2::before{
+    position: absolute;
     content: ""; 
     border: 1px solid #EC7979;
     width: 170px; 
-    margin: 10px auto 30px;
-    display: inline-block;
+    bottom: 0;
+    right: calc(50% - 85px);
+    margin-bottom: 25px;
 }
