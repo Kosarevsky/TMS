@@ -16,14 +16,16 @@ h1{
     text-transform: uppercase;
     color: #FFFFFF;
     position: relative;
+    padding: 60px 0px 60px;
 }
 
 h1::before{
     position: absolute;
+    content: "";
     width: 170px;
     height: 1px;
-    border: 1px solid #FFFFFF;
     background-color: white;
+    margin-bottom: -260px;
 }
 
 h2{
@@ -95,11 +97,13 @@ h4{
 }
 
 .banner__logo{
-    background-image: url("../img/banner_bg.png");
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("../img/banner_bg.png"); 
     background-size: cover;
-    width: 1510px;
-    height: 1026px;
+
     position: relative;
+    z-index: 2;
 }
 
 .banner__logo::after{
@@ -113,15 +117,57 @@ h4{
     padding-top: 20%;
     border: 1px solid red;
     display: flex;
+    padding-bottom: 320px;
+}
+
+.banner__content__info{
+    width: 270px;
 
 }
 
+.banner__content__description{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 10px 0 30px;
+}
+
+.banner__download{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    justify-content: center;
+    padding: 10px;
+}
+.banner__download:hover{
+    color: #EC7979;
+    border: 2px solid #EC7979;
+}
+
+.banner__download:active{
+    color: white;
+    background: #AB4949;
+    border: 2px solid #AB4949;
+}
 
 .banner__form{
     margin: 0 auto;
     width: 470px;
     height: 10px;
     background-color: white;
+    padding-left: 427px;
 }
 
 .social__content{
