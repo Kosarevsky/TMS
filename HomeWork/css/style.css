@@ -114,14 +114,15 @@ h4{
 
 .banner__wrapper{
     padding-top: 20%;
-/*     border: 1px solid red; */
     display: flex;
-    padding-bottom: 320px;
+}
+
+.banner__content{
+    width: 670px;
 }
 
 .banner__content__info{
     width: 270px;
-
 }
 
 .banner__content__description{
@@ -133,7 +134,7 @@ h4{
     display: flex;
     align-items: center;
     color: #FFFFFF;
-    padding: 40px 0 30px;
+    padding: 40px 0 20px;
 }
 
 .banner__download{
@@ -142,7 +143,6 @@ h4{
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    display: flex;
     text-transform: capitalize;
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
@@ -150,6 +150,7 @@ h4{
     justify-content: center;
     padding: 10px;
 }
+
 .banner__download:hover{
     color: #EC7979;
     border: 2px solid #EC7979;
@@ -161,12 +162,96 @@ h4{
     border: 2px solid #AB4949;
 }
 
-.banner__form{
-    margin: 0 auto;
+.banner__try{
     width: 470px;
-    height: 10px;
-    background-color: white;
-    padding-left: 427px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.banner__free{
+    display: block;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #333333;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.banner__free span{
+    color:#EC7979;
+}
+
+.banner__wrapper__form{
+    margin-left: 50px;
+    border: 2px solid green;
+}
+
+.banner__form__input__wrapper{
+    position: relative;
+    width: 370px;
+    margin-top: 40px;
+}
+
+.banner__form__input__wrapper::before{
+    content: "";
+    position: absolute;
+    background-color: #BDBDBD;
+    width: 100%;
+    height: 1px;
+    margin-top: 40px;
+}
+
+.banner__form__input{
+    width: 98%;
+    padding: 3px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #BDBDBD;
+    padding: 6px;
+}
+
+.red_button {
+    background: #EC7979; 
+    color: #fff; 
+
+    padding: 20px;
+    text-decoration: none; 
+    border-radius: 3px; 
+    width: 270px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    overflow: hidden;
+
+}
+
+.red_button:hover{
+    background: #AB4949; 
+}
+.red_button:active{
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
+.red_button-banner{
+    width: 470px;
 }
 
 .social{
@@ -275,33 +360,6 @@ h4{
     line-height: 41px;
     display: flex;
     align-items: center;
-}
-
-.tab_btn {
-    background: #EC7979; 
-    color: #fff; 
-    margin : 20px 0 20px 0;
-    padding: 1rem 1.5rem; 
-    text-decoration: none; 
-    border-radius: 3px; 
-    width: 270px;
-    height:    58px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tab_btn:hover{
-    background: #AB4949; 
-}
-.tab_btn:active{
-    background: #EC7979;
-    box-shadow: inset 0px 0px 10px #AB4949;
 }
 
 .what{
@@ -496,7 +554,6 @@ h4{
 .stylish__title-white{
     color: white;
     margin: 0 auto;
-
 }
 
 .stylish__title-white h2::before{
@@ -506,4 +563,8 @@ h4{
 .stylish__title-white>a{
     width: 370px;
     margin: 70px auto 0;
+}
+
+.contact__title__button{
+    margin: 30px auto 50px;
 }
