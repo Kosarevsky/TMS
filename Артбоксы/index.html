@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> 
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kbh6lkb.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    <title>Корзина Artbox</title>
 </head>
+
 <body>
-    <select class="card">
+    <section class="card">
         <div class="wrapper">
             <div class="wrapper__card">
-                ddd
-                <p>ddsfsjnkj</p>
+                <div class="card__title__wrapper">
+                    <a href="#" class="card__title card__title-description">Описание</a>
+                    <a href="#" class="card__title card__title-details">Детали</a>
+                    <a href="#" class="card__title card__title-feedback">Отзывы</a>
+                </div>
+
+                <div class="wrapper__card__inner">
+                    <form action="#" method="post" name="card_feedback">
+                        <p class="card__title_text">Оставьте свой отзыв на “Ароматическое саше”</p>
+                        <textarea class="bg3 card__form__feedback" name="card__form__feedback" placeholder="Ваш отзыв *"></textarea>
+                        <div class="card__form__person_info">
+                            <input class="bg3 card__form__name" type="text" placeholder="Имя*" name="card__form__name" required> 
+                            <input class="bg3 card__form__name" type="tel" placeholder="Телефон*" name="card__form__tel" required> 
+                            <input class="bg3 card__form__name" type="email" placeholder="Email" name="card__form__email"> 
+                        </div>
+                        <div class="card__form__person__send">
+                            <button type="submit" class="card__form__btn">Отправить</button>
+                            <input type="checkbox" class="custom-checkbox" id="custom_checkbox" name="custom_checkbox" value="yes">
+                            <label class="card__form__save" for="custom_checkbox">Сохранить моё имя, емаиl и адрес сайта в этом браузере для последующих моих комментариев.</label>
+                        </div>
+                    </form>
+                    <p class="card__title_text">Другие отзывы на “Ароматическое саше”</p>
+                    <div class="card__users_feedback">
+                        <div class="card__users__info">
+                            <p class="card__users__name">Ксения</p>
+                            <p class="card__users__date">25.05.2021</p>
+                        </div>
+                        <p class="card__users_feedback__text">Равным образом, семантический разбор внешних противодействий играет важную роль в формировании вывода текущих активов. Противоположная точка зрения подразумевает, что явные признаки победы институционализации, превозмогая сложившуюся непростую экономическую ситуацию, объединены в целые кластеры себе подобных. Являясь всего лишь частью общей картины, многие известные личности представлены в исключительно положительном свете.</p>
+
+                        <div class="card__users__info">
+                            <p class="card__users__name">Ксения</p>
+                            <p class="card__users__date">25.05.2021</p>
+                        </div>
+                        <p class="card__users_feedback__text">Равным образом, семантический разбор внешних противодействий играет важную роль в формировании вывода текущих активов. Противоположная точка зрения подразумевает, что явные признаки победы институционализации, превозмогая сложившуюся непростую экономическую ситуацию, объединены в целые кластеры себе подобных. Являясь всего лишь частью общей картины, многие известные личности представлены в исключительно положительном свете.</p>
+
+
+                    </div>
+                </div>
             </div>
         </div>
-    </select>
+    </section>
 </body>
+
 </html>
