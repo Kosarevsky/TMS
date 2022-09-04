@@ -79,7 +79,7 @@
     width: 90%;
 /*     background-color: green; */
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .card__title_text{
     font-family: 'Montserrat';
@@ -211,12 +211,12 @@
     background: #F9F0EE;
     border-radius: 5px;
     padding: 20px 30px 20px 25px ;
+    margin-bottom: 20px;
 }
 
 .card__users__info{
     display: flex;
     align-items: center;
-    padding-bottom: 10px;
 }
 
 .card__users__name{
