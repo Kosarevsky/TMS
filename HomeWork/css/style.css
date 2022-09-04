@@ -184,6 +184,10 @@ h4{
     width: 570px;
 }
 
+textarea{
+    height: 100%;
+}
+
 .contact__form-right>.form__input__wrapper-contact::before{
     margin-top: 181px;
 }
@@ -231,10 +235,10 @@ h4{
     background: #AB4949;
     border: 2px solid #AB4949;
 }
-
+    
 .banner__download-red{
     background: #EC7979;
-    margin: 50px auto;
+    margin: 55px auto;
 }
 
 .banner__download-red:hover{
@@ -289,7 +293,7 @@ h4{
 
 .social__content .wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -372,8 +376,20 @@ h4{
 
 .tab__content_right_img{
     width: 470px;
-    height: 500px;
 }
+
+.awesome__card__circle__img-one{
+    padding-top: 7px;
+}
+
+.awesome__card__circle__img-two{
+    padding-top: 20px;
+}
+
+.awesome__card__circle__img-three{
+    padding-top: 12px;
+}
+
 .tab__content__title{
     padding: 50px 0 70px 0;
     font-family: 'Open Sans', sans-serif;
@@ -384,6 +400,41 @@ h4{
     display: flex;
     align-items: center;
 }
+
+.awesome__card{
+    width: 370px;
+    text-align: center;
+}
+
+.awesome__content{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding-bottom: 50px;
+}
+
+.awesome__card__circle__img{
+    height: 92px;
+    width: 92px;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.awesome__card__title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #000000;
+    padding: 50px 0 50px 0;
+}
+
 
 .what{
     padding-bottom: 70px;
