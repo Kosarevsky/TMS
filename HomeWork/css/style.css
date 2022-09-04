@@ -11,12 +11,9 @@ h1{
     font-weight: 500;
     font-size: 48px;
     line-height: 56px;
-    display: flex;
-    align-items: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    position: relative;
-    padding: 60px 0px 60px;
+    padding: 70px 0px 70px;
 }
 
 h1::before{
@@ -25,7 +22,7 @@ h1::before{
     width: 170px;
     height: 1px;
     background-color: white;
-    margin-bottom: -260px;
+    top: 580px;
 }
 
 h2{
@@ -60,7 +57,7 @@ h4{
     background: #000000;
     display: flex;
     justify-content: space-between;
-    padding-right: 120px;
+    padding-right: 220px;
 }
 
 .header__logo{
@@ -72,7 +69,7 @@ h4{
 }
 
 .navigation-list__item{
-    margin-left: 30px;
+    margin-left: 65px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -82,8 +79,6 @@ h4{
     align-items: center;
     text-align: center;
     text-transform: capitalize;
-    color: #FFFFFF;
-    text-transform:  capitalize;
 }
 
 .navigation-list__item a{
@@ -93,32 +88,34 @@ h4{
 .wrapper{
     margin: 0 auto;
     width: 1170px;
-    padding: 0 15px
 }
 
 .banner__logo{
-    background:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url("../img/banner_bg.png"); 
-    background-size: cover;
     position: relative;
-    z-index: 2;
+    background: url("../img/banner_bg.png"); 
 }
 
 .banner__logo::after{
-    content: "";
+    content: '';
     position: absolute;
-    background-color: rgba(0,0,0,0.8);  
-    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
 }
 
 .banner__wrapper{
+    position: relative;
+    z-index: 3;
+    color: #fff; 
     padding-top: 20%;
-    display: flex;
 }
 
 .banner__content{
     width: 670px;
+    display: inline-block;
 }
 
 .banner__content__info{
@@ -134,32 +131,7 @@ h4{
     display: flex;
     align-items: center;
     color: #FFFFFF;
-    padding: 40px 0 20px;
-}
-
-.banner__download{
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: capitalize;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    cursor: pointer;
-    justify-content: center;
-    padding: 10px;
-}
-
-.banner__download:hover{
-    color: #EC7979;
-    border: 2px solid #EC7979;
-}
-
-.banner__download:active{
-    color: white;
-    background: #AB4949;
-    border: 2px solid #AB4949;
+    padding: 40px 0 10px;
 }
 
 .banner__try{
@@ -168,6 +140,7 @@ h4{
     border-radius: 10px;
     margin: 0 auto;
     border: 1px solid red;
+    display: inline-block;
 }
 
 .banner__free{
@@ -190,16 +163,15 @@ h4{
 
 .banner__wrapper__form{
     margin-left: 50px;
-    border: 2px solid green;
 }
 
-.banner__form__input__wrapper{
+.form__input__wrapper{
     position: relative;
     width: 370px;
     margin-top: 40px;
 }
 
-.banner__form__input__wrapper::before{
+.form__input__wrapper::before{
     content: "";
     position: absolute;
     background-color: #BDBDBD;
@@ -208,7 +180,15 @@ h4{
     margin-top: 40px;
 }
 
-.banner__form__input{
+.form__input__wrapper-contact{
+    width: 570px;
+}
+
+.contact__form-right>.form__input__wrapper-contact::before{
+    margin-top: 181px;
+}
+
+.form__input{
     width: 98%;
     padding: 3px;
     border: none;
@@ -219,12 +199,56 @@ h4{
     line-height: 19px;
     color: #BDBDBD;
     padding: 6px;
+    resize: none;
 }
 
+.banner__footer{
+    padding: 50px 0 150px 0;
+}
+
+.banner__download{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    justify-content: center;
+    padding: 15px 90px 20px 90px;
+    background: transparent;
+}
+
+.banner__download:hover{
+    color: #EC7979;
+    border: 2px solid #EC7979;
+}
+
+.banner__download:active{
+    color: white;
+    background: #AB4949;
+    border: 2px solid #AB4949;
+}
+
+.banner__download-red{
+    background: #EC7979;
+    margin: 50px auto;
+}
+
+.banner__download-red:hover{
+    background: white;
+}
+
+.banner__download-red:active{
+    color: #AB4949;
+    background: white;
+    border: 2px solid #AB4949;
+}
 .red_button {
     background: #EC7979; 
     color: #fff; 
-
     padding: 20px;
     text-decoration: none; 
     border-radius: 3px; 
@@ -239,7 +263,6 @@ h4{
     align-items: center;
     text-transform: capitalize;
     overflow: hidden;
-
 }
 
 .red_button:hover{
@@ -252,6 +275,7 @@ h4{
 
 .red_button-banner{
     width: 470px;
+    margin-top: 50px;
 }
 
 .social{
@@ -271,11 +295,11 @@ h4{
 
 .social__info{
     width: 470px;
-    padding: 10px 0 25px;
+    padding: 10px 0;
 }
 
 .social__info h4{
-    padding-bottom: 10px 
+    padding: 20px 0 30px 0; 
 }
 
 .social__info p{
@@ -284,8 +308,6 @@ h4{
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    display: flex;
-    align-items: center;
     color: #86878B;
 }
 
@@ -293,6 +315,7 @@ h4{
     display: flex;
     justify-content: center;
 }
+
 .social__url{
     color: #CCCCCC;
     margin: 10px;
@@ -337,7 +360,7 @@ h4{
 }
 
 .tab__content_left p {
-    padding: 15px 0 15px;
+    padding: 15px 0 35px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -383,7 +406,7 @@ h4{
     line-height: 21px;
     display: flex;
     justify-content: center; 
-    padding-top: 10px;
+    padding: 10px 0 50px 0;
     color: #86878B;
 }
 .pricing__wrap{
@@ -446,7 +469,7 @@ h4{
 .pricing__card-name{
     background: #333333;
     border: 2px solid #F5F5F5;   
-    padding: 10px;
+    padding: 20px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -460,12 +483,11 @@ h4{
 
 .pricing__card-item{
     border: 2px solid #F5F5F5;  
-    padding: 10px; 
+    padding: 20px; 
 }
 
 .customer__wrap{
     display: flex;
-    margin-top: 35px;
     justify-content: space-between;
 }
 
@@ -568,3 +590,43 @@ h4{
 .contact__title__button{
     margin: 30px auto 50px;
 }
+
+.contact__form__wrapper{
+    display: flex;
+}
+
+.contact__form-left,
+.contact__form-right{
+    padding: 0 10px;
+}
+
+.footer__content{
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.footer__content svg{
+    fill: #CCCCCC;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.footer__content svg:hover{
+    transition: 0.5s;
+    transform: scale(1.4);
+}
+
+.footer__content__text{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    background: #000000;
+    padding-bottom: 27px;
+}
+
