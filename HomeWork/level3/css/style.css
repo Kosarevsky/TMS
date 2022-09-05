@@ -204,6 +204,7 @@ textarea{
     color: #BDBDBD;
     padding: 6px;
     resize: none;
+    outline: none;
 }
 
 .banner__footer{
