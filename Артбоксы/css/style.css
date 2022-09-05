@@ -90,7 +90,7 @@
     /* identical to box height, or 167% */
     letter-spacing: 0.04em;
     color: #371030;
-    padding: 30px 0;
+    padding: 40px 0 0 0;
 }
    
 .card__form__person_info{
@@ -133,10 +133,11 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    align-items: center;
     letter-spacing: 0.04em;
     color: #9A3C48;
     border: none;
-    padding: 7px 35px;
+    padding: 17px 35px;
 }
 
 .card__form__btn:hover,
