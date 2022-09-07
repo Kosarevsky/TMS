@@ -6,12 +6,12 @@
     text-decoration: none;
 }
 
-@media (max-width:1200px){
+@media (max-width:767px){
     .wrapper-big{
-        max-width: 1024px;
+        max-width: none;
     }
     .wrapper{
-        max-width: 992px;
+        max-width: none;
     }
 }
 
@@ -331,6 +331,7 @@ textarea{
 
 .tabs{
     display: flex;
+    padding-top: 80px;
 }
 
 .tab__button{
