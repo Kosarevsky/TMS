@@ -6,6 +6,15 @@
     text-decoration: none;
 }
 
+@media (max-width:1200px){
+    .wrapper-big{
+        max-width: 1024px;
+    }
+    .wrapper{
+        max-width: 992px;
+    }
+}
+
 h1{
     font-family: 'Raleway';
     font-style: normal;
@@ -177,7 +186,7 @@ textarea{
 }
 
 .form__input{
-    width: 98%;
+    width: 100%;
     padding: 3px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -190,15 +199,11 @@ textarea{
     outline: none;
     border: none;   
     border-bottom: 1px solid #BDBDBD;
-    padding-bottom: 15px;
-    margin-top: 20px;
+    padding: 40px 0 10px 0;
 }
 
 .banner__footer{
     padding: 50px 0 150px 0;
-
-
-
     position: relative;
     z-index: 3;
 }
@@ -248,8 +253,8 @@ textarea{
     color: #fff; 
     padding: 20px;
     text-decoration: none; 
-/*     width: 270px; */
-    width: 40.3%;
+    width: 270px;
+/*     width: 40.3%; */
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -260,6 +265,7 @@ textarea{
     align-items: center;
     text-transform: capitalize;
     overflow: hidden;
+    border: none;
 }
 
 .red_button:hover{
@@ -275,10 +281,6 @@ textarea{
     margin-top: 50px;
     border: none;
     vertical-align: bottom;
-}
-
-.social{
-    margin-bottom: 100px;
 }
 
 .social__content{
@@ -610,8 +612,8 @@ textarea{
     content: ""; 
     background-color: #EC7979;
     height: 1px;
-/*     width: 170px;  */
-    width: 14.53%;
+    width: 170px; 
+/*     width: 14.53%; */
     bottom: 0;
     right: calc(50% - 85px);
     margin-bottom: 25px;
@@ -651,6 +653,7 @@ textarea{
 .contact__form-left,
 .contact__form-right{
     padding: 0 10px;
+    width: 48.9743%;
 }
 
 .footer__content{
