@@ -6,15 +6,6 @@
     text-decoration: none;
 }
 
-@media (max-width:767px){
-    .wrapper-big{
-        max-width: none;
-    }
-    .wrapper{
-        max-width: none;
-    }
-}
-
 h1{
     font-family: 'Raleway';
     font-style: normal;
@@ -58,24 +49,22 @@ h4{
     color: #333333;
 }
 
-.wrapper-big{
-    max-width: 1510px;
-    margin: 0 auto;
-}
-
 .header__content{
     background: #000000;
+
+}
+.header__content .wrapper{
     display: flex;
     justify-content: space-between;
-    padding-right: 220px;
 }
 
 .header__logo{
-    margin: 20px 0px 20px 120px;
+    margin: 20px 0px 20px -40px;
 }
 
 .navigation-list{
     display: flex;
+    padding-right: 40px;
 }
 
 .navigation-list__item{
@@ -98,11 +87,14 @@ h4{
 .wrapper{
     margin: 0 auto;
     max-width: 1170px;
+    padding: 0 15px;
 }
 
 .banner__logo{
     position: relative;
     background: url("../img/banner_bg.png"); 
+    background-size: cover;
+    background-position: center center;
 }
 
 .banner__logo::after{
@@ -151,7 +143,7 @@ h4{
     width: 40.17%;
     background: #FFFFFF;
     border-radius: 10px;
-    margin: 0 auto;
+/*     margin: 0 auto; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -285,7 +277,6 @@ textarea{
 
 .social__content{
     background: #F8EFEF;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .social__content .wrapper{
@@ -296,7 +287,7 @@ textarea{
 
 .social__info{
 /*     width: 470px; */
-    width: 40.17%;
+    width: 40.5%;
     padding: 10px 0;
 }
 
@@ -687,3 +678,51 @@ textarea{
     padding-bottom: 27px;
 }
 
+
+@media (max-width:1200px){
+    .wrapper{
+        max-width: 1024px;
+    }
+    .header__logo{
+        margin-left: 0px;
+    }
+
+    h1{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .header__content,
+    .banner__footer{
+        padding-left: 100px;
+        padding-right: 30px;
+    }
+
+    .banner__content{
+        width: 54.7511%;
+        padding-right: 30px;
+    }
+    .banner__content>a>img{
+        width: 102px;
+        height: 41px;
+    }
+    .banner__right{
+        width: 45.2489%;
+    }
+    .banner__wrapper{
+        width: 88.9336%;
+        margin: 0 0 0 115px;
+        justify-content: space-between;
+    }
+    h1::before{
+        top: 493px;
+    }
+    .banner__content__description{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .banner__free{
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+}
