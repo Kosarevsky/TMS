@@ -6,6 +6,28 @@
     text-decoration: none;
 }
 
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+
+    /* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #000000;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 4;
+}
+
 html{
     font-size: 10px;
 }
@@ -47,7 +69,6 @@ h4{
 
 .header__content{
     background: #000000;
-    z-index: 3;
     position: relative;
 }
 .header__content .wrapper{
@@ -88,26 +109,17 @@ h4{
 }
 
 .banner__logo{
-    position: relative;
-    background: url("../img/banner_bg.png"); 
-    background-size: cover;
-    background-position: center center;
-}
-
-.banner__logo::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,.5);
-    z-index: 2;
+    background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/banner_bg.png"); 
 }
 
 .banner__wrapper{
     position: relative;
-    z-index: 3;
     color: #fff; 
     padding-top: 20%;
     display: flex;
@@ -153,9 +165,9 @@ h4{
     background: #FFFFFF;
     border-radius: 10px;
 /*     margin: 0 auto; */
-    kdisplay: flex;
-    jflex-direction: column;
-    kjustify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
 }
 
@@ -451,8 +463,9 @@ textarea{
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.1rem;
-    display: flex;
-    justify-content: center; 
+/*     display: flex;
+    justify-content: center;  */
+    text-align: center ;
     padding: 10px 0 40px ;
     color: #86878B;
 }
@@ -543,7 +556,20 @@ textarea{
     padding-top: 10px;
 /*     width: 370px; */
     width: 31.624%;
+    position: relative;
 }
+
+.customer__card::before{
+    content: "";
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 19px solid #E2E2E2;
+    position: absolute;
+    top: 166px;
+    left: 58px;
+}
+
 .customer__card>p{
     background: #E2E2E2;
     border-radius: 10px; 
@@ -557,17 +583,6 @@ textarea{
     text-align: center;
     color: #86878B;
     position: relative;
-}
-
-.customer__card>p::before{
-    content: "";
-    position: absolute;
-    border-left: 12px solid transparent;
-    border-right: 11px solid transparent;
-    border-top: 17px solid #E2E2E2;
-    position: absolute;
-    top: 157px;
-    left: 72px;
 }
 
 .customer__sub__card{
@@ -615,23 +630,14 @@ textarea{
     margin-bottom: 25px;
 }
 
-
 .stylish__logo{
-    position: relative;
-    background: url("../img/stylish_bg.png"); 
-    background-size: cover;
-    background-position: center center;
-}
-
-.stylish__logo::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,.5);
-    z-index: 2;
+    background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/stylish_bg.png"); 
 }
 
 .stylish__wrapper{
@@ -640,7 +646,8 @@ textarea{
 
 .stylish__title-white{
     color: white;
-    z-index: 5;
+    display: flex;
+    flex-direction: column;
 }
 
 .stylish__title-white h2::before{
@@ -788,7 +795,6 @@ textarea{
         line-height: 28px;
         padding-top: 20px;
     }
-
     
     .banner__wrapper,
     .header__content{
@@ -804,14 +810,16 @@ textarea{
     .banner__content__description::before{
         right: calc(50% - 90px);
     }    
-    .banner__download,
+ 
     .banner__right{
         width: 100%;
         margin-top: 56px;
     }
+
     .banner__download{
-        margin-top: 40px;
+
     }
+
     .banner__right{
         margin-bottom: 50px;
     }
@@ -829,14 +837,21 @@ textarea{
     }
     .social__info{
             width: 100%;
-            margin: 20px 0;
+            margin-top: 20px;
     }
 
+    .social__info p{
+        text-align: center;
+        padding-top: 20px;
+    }
     .social__info h4 {
         padding: 0;
         text-align: center;
     }
    
+    .social__link{
+        padding-bottom: 20px;
+    }
     .social__url{
         font-size: 6px;
     }
@@ -910,10 +925,6 @@ textarea{
         padding: 0;
     }
 
-    .stylish__title-white>a {
-        margin: 0;
-    }
-
     .contact__form__wrapper{
         flex-wrap: wrap;
         padding: 0;
@@ -922,7 +933,14 @@ textarea{
     .contact__form-right textarea{
         padding: 40px 0 150px 0;
     }
+    .stylish__title-white>a {
+        width: 100%;
+        margin: 30px 0 58px;
+    }
 
+    .banner__content__description{
+        justify-content:  center;
+    }
 
 
 
@@ -932,17 +950,14 @@ textarea{
 
     
 
-/* скрываем чекбокс */
-#menu__toggle {
-    opacity: 0;
-  }
+
   /* стилизуем кнопку */
   .menu__btn {
     display: flex; /* используем flex для центрирования содержимого */
     align-items: center;  /* центрируем содержимое кнопки */
     position: fixed;
     top: 19px;
-    left: 270px;
+    margin-left: -40px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -967,22 +982,7 @@ textarea{
     top: 8px;
   }
 
-  /* контейнер меню */
-.menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
-    width: 300px;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #ECEFF1;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  }
+
   /* элементы меню */
   .menu__item {
     display: block;
