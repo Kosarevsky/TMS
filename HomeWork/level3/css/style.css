@@ -6,10 +6,13 @@
     text-decoration: none;
 }
 
+.hamburger-menu{
+    display: none;
+}
 /* скрываем чекбокс */
 #menu__toggle {
     opacity: 0;
-  }
+}
 
     /* контейнер меню */
 .menu__box {
@@ -127,14 +130,12 @@ h4{
 }
 
 .banner__content{
-/*     width: 670px; */
     width: 57.265%;
     display: inline-block;
     position: relative;
 }
 
 .banner__content__info{
-/*     width: 270px; */
     width: 40.3%;
 }
 
@@ -165,7 +166,6 @@ h4{
     width: 40.17%;
     background: #FFFFFF;
     border-radius: 10px;
-/*     margin: 0 auto; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -305,7 +305,6 @@ textarea{
 }
 
 .social__info{
-/*     width: 470px; */
     width: 43%;
     padding: 10px 0;
 }
@@ -411,7 +410,6 @@ textarea{
 }
 
 .awesome__card{
-/*     width: 370px; */
     width: 31.624%;
     text-align: center;
 }
@@ -465,8 +463,6 @@ textarea{
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.1rem;
-/*     display: flex;
-    justify-content: center;  */
     text-align: center ;
     padding: 10px 0 40px ;
     color: #86878B;
@@ -487,7 +483,6 @@ textarea{
     color: #86878B;
     background: #FFFFFF;  
     border: 2px solid #F5F5F5;
-/*     width: 370px; */
     width: 31.624%;
     text-align: center;
 }
@@ -556,21 +551,11 @@ textarea{
 
 .customer__card{
     padding-top: 10px;
-/*     width: 370px; */
     width: 31.624%;
     position: relative;
 }
 
-.customer__card::before{
-    content: "";
-    position: absolute;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 19px solid #E2E2E2;
-    position: absolute;
-    top: 166px;
-    left: 58px;
-}
+
 
 .customer__card>p{
     background: #E2E2E2;
@@ -585,6 +570,16 @@ textarea{
     text-align: center;
     color: #86878B;
     position: relative;
+}
+
+.customer__card>p::before{
+    content: "";
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 19px solid #E2E2E2;
+    top: 100%;
+    left: 58px;
 }
 
 .customer__sub__card{
@@ -792,6 +787,9 @@ textarea{
     .tab__content_right-img{
         display: none;
     }
+    .hamburger-menu{
+        display: inline;
+    }
     h2{
         font-size: 24px;
         line-height: 28px;
@@ -828,6 +826,11 @@ textarea{
     .banner__right{
         margin-bottom: 50px;
         margin-left: 0px;
+    }
+
+    .banner__form__input{
+        width: 100%;
+        padding: 0 20px;
     }
     .banner__content__info{
         padding: 0;
@@ -869,9 +872,12 @@ textarea{
     .tab__content{
         justify-content: center;
     }
+
     .tab__content_left{
         margin: 0;
+        padding: 0 20px 0 24px;
         text-align: center;
+        margin-bottom: 30px; 
     }
     .tab__content_left p{
         padding: 10px 0;
@@ -886,12 +892,12 @@ textarea{
 
     }    
     .red_button{
-        width: 80%;
+        width: 100%;
         padding: 10px;
         justify-content: center;
         margin: 0 auto;
         margin-top: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
     .pricing_content{
         font-size: 14px;
@@ -963,12 +969,6 @@ textarea{
 
 
 
-
-
-
-    
-
-
   /* стилизуем кнопку */
   .menu__btn {
     display: flex; /* используем flex для центрирования содержимого */
@@ -999,7 +999,6 @@ textarea{
     content: '';
     top: 8px;
   }
-
 
   /* элементы меню */
   .menu__item {
@@ -1032,6 +1031,5 @@ textarea{
     visibility: visible;
     left: 0;
   }
-
 
 }
