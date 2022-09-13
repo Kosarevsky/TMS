@@ -1,3 +1,16 @@
+@import 'banner';
+
+@import 'header';
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+}
+
 h1{
     color: red;
+}
+
+.wrapper{
+    width: 1170px;
 }
