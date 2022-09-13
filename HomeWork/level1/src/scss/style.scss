@@ -1,3 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
 @import 'banner';
 
 @import 'header';
@@ -8,7 +15,23 @@ body{
 }
 
 h1{
-    color: red;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 130px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .wrapper{
