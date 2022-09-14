@@ -3,9 +3,10 @@
     .team__card{
         width: 270px;
         h3{
-            justify-content:  center;
-            padding: 22px 0;
-            margin-top: 40;
+            justify-content:  flex-start;
+            text-transform: capitalize;
+            margin-top: 30;
+            font-weight: 700;
         }
         img{
             display: block;
