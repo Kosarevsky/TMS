@@ -12,12 +12,7 @@ body{
 }
 
 h1{
-    @media (max-width:1200px){
-        h1{
-            font-size: 48px;
-            line-height: 56px;
-        }
-    }
+
     font-weight: 900;
     font-size: 64px;
     line-height: 75px;
@@ -25,6 +20,10 @@ h1{
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+    @media (max-width:1200px){
+            font-size: 48px;
+            line-height: 56px;
+    }
 }
 h3{
     font-weight: 900;
@@ -51,10 +50,8 @@ h4{
 
 p{
     @media (max-width:1200px){
-        p{
             font-size: 24px;
             line-height: 28px;
-        }
     }
     font-weight: 400;
     font-size: 18px;
