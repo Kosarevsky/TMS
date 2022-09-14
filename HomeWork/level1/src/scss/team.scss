@@ -1,5 +1,7 @@
 .team__content{
-    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 114px;
     .team__card{
         width: 270px;
         .team__card__img{
@@ -14,11 +16,18 @@
             font-weight: 700;
         }
         .team__card__position{
-            
+            text-transform: uppercase;
+            color: #FF4343; 
         }
         p{
             margin: 10px 0;
             text-align: left;
+            &:last-of-type{
+                margin-top: 18px;
+            }
+        }
+        .team__card__link{
+            margin: 38px 3px;
         }
     }
 }
