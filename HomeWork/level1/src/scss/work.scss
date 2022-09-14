@@ -1,0 +1,12 @@
+.work__content{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    .work__card{
+         width: 100%;
+    }
+}
+
+
