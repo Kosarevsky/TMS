@@ -36,6 +36,19 @@ h3{
     text-transform: uppercase;
     color: #2D3033;
 }
+
+h4{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #2D3033;
+}
+
 p{
     @media (max-width:1200px){
         p{
@@ -65,3 +78,5 @@ p{
 @import 'features';
 
 @import 'work';
+
+@import 'team';
