@@ -5,7 +5,14 @@
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     .work__card{
-         width: 100%;
+        width: 100%;
+        img{
+            display: block;
+            width: 100%;
+            max-width: 378px;
+            max-height: 340px;
+            object-fit: cover;
+        }
     }
 }
 

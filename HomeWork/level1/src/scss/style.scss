@@ -34,6 +34,10 @@ h3{
     text-align: center;
     text-transform: uppercase;
     color: #2D3033;
+    @media (max-width:1200px) {
+        font-size: 18px;
+        line-height: 21px;
+    }
 }
 
 h4{
@@ -46,21 +50,23 @@ h4{
     align-items: center;
     text-transform: capitalize;
     color: #2D3033;
+    @media (max-width:1200px){
+        font-size: 18px;
+        line-height: 21px;
+    }
 }
 
 p{
-    @media (max-width:1200px){
-            font-size: 24px;
-            line-height: 28px;
-    }
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     display: flex;
     align-items: center;
     text-align: center;
-
-    
+    @media (max-width:1200px){
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 
 .wrapper{
@@ -69,11 +75,8 @@ p{
 }
 
 @import 'banner';
-
 @import 'header';
-
 @import 'features';
-
 @import 'work';
-
 @import 'team';
+@import 'testimonials'
