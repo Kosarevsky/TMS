@@ -74,9 +74,12 @@ p{
     margin: 0 auto;
 }
 
+@import 'mixin'; 
 @import 'banner';
 @import 'header';
 @import 'features';
 @import 'work';
 @import 'team';
-@import 'testimonials'
+@import 'testimonials';
+@import 'download';
+@import 'footer';

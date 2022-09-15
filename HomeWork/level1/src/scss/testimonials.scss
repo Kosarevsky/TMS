@@ -1,0 +1,64 @@
+.testmonials{
+    &__content{
+        display: flex;
+    
+        justify-content: center;
+        &__left{
+            width: 741px;
+            height: 490px;
+            img{
+                display: block;
+                width: 100%;
+                max-width: 741px;
+                object-fit: cover;
+            }
+        }
+    
+        &__right{
+            width: 769px;
+            background-color: #5C3249;
+            &__info{
+                width: 470px;
+                margin: 116px 0 0 129px;
+            }
+
+            &__title{
+                font-family: 'Cardo', sans-serif;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 49px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                text-align: left;
+            }
+
+            &__position{
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 15px;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-top: 30px;
+            }
+
+        }
+    
+
+    }
+
+    &__dots{
+        display: flex;
+        justify-content: center;
+        margin-top: 31px;
+        &__normal{
+            width: 14px;
+            height: 15px;
+            border: 1px solid #7E5D6F;
+            border-radius: 50%;
+            margin: 0 12px 0;
+        }
+    }
+}
