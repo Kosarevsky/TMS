@@ -1,41 +1,64 @@
-.team__content{
-    display: flex;
-    justify-content: space-around;
+.team{
     margin-top: 114px;
-    .team__card{
-        width: 270px;
-        .team__card__img{
-            display: block;
-            margin: 0 auto;
-            max-width: 270px;
-            img{
+    @media (max-width:1200px) {
+        margin-top: 78px;
+        
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        .team__card{
+            width: 270px;
+            @media (max-width:1200px) {
+                width: 227px;
+                
+            }
+            .team__card__img{
                 display: block;
-                width: 100%;
-                object-fit: cover;
+                margin: 0 auto;
                 max-width: 270px;
-                max-height: 270px;
+                img{
+                    display: block;
+                    width: 100%;
+                    object-fit: cover;
+                    max-width: 270px;
+                    max-height: 270px;
+                    @media (max-width:1200px) {
+                        max-width: 227px;
+                        max-height: 227px;
+                    }
+                }
             }
-        }
-        h3{
-            justify-content:  flex-start;
-            text-transform: capitalize;
-            margin-top: 30;
-            font-weight: 700;
-        }
-        .team__card__position{
-            text-transform: uppercase;
-            color: #FF4343; 
-        }
-        p{
-            margin: 10px 0;
-            text-align: left;
-            color: #6C7279;
-            &:last-of-type{
-                margin-top: 18px;
+            h4{
+                justify-content:  flex-start;
+                text-transform: capitalize;
+                margin-top: 30;
+                font-weight: 700;
             }
-        }
-        .team__card__link{
-            margin: 38px 3px;
+
+            &__position{
+                text-transform: uppercase;
+                color: #FF4343; 
+            }
+            p{
+                margin: 10px 0;
+                text-align: left;
+                color: #6C7279;
+                &:last-of-type{
+                    margin-top: 18px;
+                }
+            }
+            &__link{
+                margin-top: 38px;
+
+                &__item svg{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
         }
     }
 }
+
+
+

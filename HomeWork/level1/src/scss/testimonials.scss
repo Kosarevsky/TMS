@@ -1,4 +1,9 @@
 .testmonials{
+    margin-top: 114px;
+    @media (max-width:1200px) {
+        margin-top: 78px;
+    }
+
     &__content{
         display: flex;
     

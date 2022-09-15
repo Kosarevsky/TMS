@@ -4,6 +4,10 @@
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
+    @media (max-width:1200px) {
+        margin-top: 80px;
+        
+    }
     .work__card{
         width: 100%;
         overflow: hidden;

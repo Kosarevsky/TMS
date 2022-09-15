@@ -13,17 +13,24 @@
     }
     .features__card{
         display: block;
-        img{
-            display: block;
+        margin-top: 20px;
+        &__image{
+            width: 85px;
+            height: 90px;
             margin: 0 auto;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
         }
+
         h3{
             justify-content:  center;
             padding: 22px 0;
-            margin-top: 40;
+            margin-top: 26px;
             @media (max-width:1200px){
                 padding: 19px 0;
-                margin-top: 34;
+                margin-top: 34px;
             }
         }
         p{

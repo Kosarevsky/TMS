@@ -10,8 +10,11 @@
         text-transform: uppercase;
         color: #FFFFFF;
         background-color: #FF4343;;
-        padding: 25px 0;
         width: 370px;
+        padding: 25px 0;
+        @media (max-width:1200px) {
+            width: 313px;
+        }
         &:hover{
             background: #E71414;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

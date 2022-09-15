@@ -4,9 +4,10 @@
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
         ), url("../img/banner_bg.png");
-    background-size: cover;
-    background-position: top;
-    color: white;
+        background-size: cover;
+        background-position: top; 
+
+        color: white;
         .header{
             display: flex;
             justify-content: space-between;
@@ -27,12 +28,13 @@
                             line-height: 15px;
                             display: flex;
                             align-items: center;
-                            text-align: center;
+                            justify-content: center;
                             text-transform: uppercase;
                             padding: 40px 10px 40px;
                             background-color: transparent;
                             border: 3px solid transparent;
                             color: white;
+                            width: 134px;
                                 &:hover {
                                     border-bottom: 3px solid #BABBC5;;
                                 }
@@ -58,6 +60,7 @@
                 @media (max-width:1200px) {
                     font-size: 18px;
                     line-height: 21px;
+                    margin-top: 61px;
                 }
             }
             .banner__btn{
