@@ -52,8 +52,14 @@
                 margin-top: 38px;
 
                 &__item svg{
-                    width: 32px;
-                    height: 32px;
+                    width: 39px;
+                    height: 39px;
+                    margin: 3px;
+                    @media (max-height:1200px){
+                        width: 32px;
+                        height: 32px;
+                            margin: 2px;
+                    }
                 }
             }
         }

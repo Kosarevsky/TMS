@@ -50,8 +50,7 @@
             margin: 0 auto;
             @media (max-width:1200px){
                 width: 984px;
-                padding: 0;
-                padding-top: 157px;
+                padding: 158px 113px 0;
             }
             p{
                 font-size: 24px;
@@ -60,7 +59,7 @@
                 @media (max-width:1200px) {
                     font-size: 18px;
                     line-height: 21px;
-                    margin-top: 61px;
+                    margin-top: 62px;
                 }
             }
             .banner__btn{

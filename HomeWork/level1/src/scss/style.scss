@@ -51,6 +51,7 @@ h4{
     text-transform: capitalize;
     color: #2D3033;
     @media (max-width:1200px){
+        margin-top: 25px;
         font-size: 18px;
         line-height: 21px;
     }
@@ -73,6 +74,7 @@ p{
     max-width: 1170px;
     margin: 0 auto;
     @media (max-width:1200px) {
+        max-width: 984px;
          padding: 0 20px;       
     }
 }
