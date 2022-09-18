@@ -13,7 +13,7 @@
                 width: 227px;
                 
             }
-            .team__card__img{
+            &__img{
                 display: block;
                 margin: 0 auto;
                 max-width: 270px;
@@ -29,36 +29,46 @@
                     }
                 }
             }
+
             h4{
                 justify-content:  flex-start;
                 text-transform: capitalize;
                 margin-top: 30;
                 font-weight: 700;
+                padding: 1px 0;
+                @media (max-width:1200px) {
+                    margin-top: 25px;
+                    padding: 2px 0;
+                }
             }
 
             &__position{
+                margin-top: 5px;
                 text-transform: uppercase;
                 color: #FF4343; 
             }
-            p{
-                margin: 10px 0;
+            p:last-of-type{
                 text-align: left;
                 color: #6C7279;
-                &:last-of-type{
-                    margin-top: 18px;
+                margin-top: 18px;
+                @media (max-width:1200px) {
+                    margin-top: 22px;
                 }
             }
             &__link{
-                margin-top: 38px;
-
+                margin-top: 37px;
+                @media (max-width:1200px){
+                    margin-top: 39px;
+                }
                 &__item svg{
                     width: 39px;
                     height: 39px;
-                    margin: 3px;
-                    @media (max-height:1200px){
+                    margin: 0 3px;
+                    @media (max-width:1200px){
+
                         width: 32px;
                         height: 32px;
-                            margin: 2px;
+                        margin: 0 2px;
                     }
                 }
             }

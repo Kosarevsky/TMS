@@ -6,11 +6,15 @@
 
     &__content{
         display: flex;
-    
         justify-content: center;
+
         &__left{
             width: 741px;
             height: 490px;
+            @media (max-width:1200px) {
+                width: 502px;
+                height: 302px;
+            }
             img{
                 display: block;
                 width: 100%;
@@ -22,9 +26,16 @@
         &__right{
             width: 769px;
             background-color: #5C3249;
+            @media (max-width:1200px) {
+                width: 522px;
+            }
             &__info{
                 width: 470px;
                 margin: 116px 0 0 129px;
+                @media (max-width:1200px) {
+                    width: 330px;
+                    margin: 47px 0 0 88px;
+                }
             }
 
             &__title{
@@ -36,6 +47,12 @@
                 text-transform: capitalize;
                 color: #FFFFFF;
                 text-align: left;
+                padding: 17px 0;
+                @media (max-width:1200px) {
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding: 14px 0;
+                }
             }
 
             &__position{
@@ -46,24 +63,35 @@
                 align-items: center;
                 text-transform: uppercase;
                 color: #FFFFFF;
-                margin-top: 30px;
+                padding: 7px 0;
+                @media (max-width:1200px) {
+                    font-size: 12px;
+                    line-height: 14px;
+                    padding: 0;
+                }
             }
 
         }
-    
-
     }
 
     &__dots{
         display: flex;
         justify-content: center;
         margin-top: 31px;
+        @media (max-width:1200px) {
+            margin-top: 24px;
+        }
+
         &__normal{
             width: 14px;
             height: 15px;
             border: 1px solid #7E5D6F;
             border-radius: 50%;
-            margin: 0 12px 0;
+            margin: 0 13px 0;
+            @media (max-width:1200px) {
+                width: 10px;
+                height: 10px;
+            }
         }
     }
 }

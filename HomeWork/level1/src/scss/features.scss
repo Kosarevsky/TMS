@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 29px;
-    margin-top: 116px;
+    margin-top: 27px;
     @media (max-width:1200px){
         width: 984px;
         grid-gap: 20px;
@@ -13,7 +13,7 @@
     }
     .features__card{
         display: block;
-        margin-top: 20px;
+        margin-top: 100px;
         @media (max-width:1200px){
             margin-top: 57px;
         }
@@ -29,18 +29,20 @@
 
         h3{
             justify-content:  center;
-            margin-top: 48px;
+            margin-top: 40px;
+            padding: 22px 0;
             @media (max-width:1200px){
                 margin-top: 44px;
+                padding: 20px 0;
             }
         }
         p{
-<<<<<<< HEAD
-            margin: 24px 0;
-=======
-            margin-top: 10px 0;
->>>>>>> e0f70f93baa1788ba162b2c47de97e73f5fb9413
             color: #6C7279;
+            margin-top: 20px;
+            @media (max-width:1200px) {
+                margin-top: 4px;
+                
+            }
         }
     }
 }
