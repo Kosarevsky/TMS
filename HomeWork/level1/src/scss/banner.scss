@@ -1,6 +1,5 @@
 .banner{
         background: url("../img/banner_bg.png") center/cover no-repeat;
-/*         background-position: top;  */
         color: white;
         @media (max-width:1200px) {
             background: url("../img/bg.png") center/cover no-repeat;
@@ -12,9 +11,17 @@
             border: none;
             border-bottom: 1px solid #BABBC5;
             position: relative;
+            @media (max-width:768px){
+                border: none;
+                padding: 13px 0;
+            }
+
             .header__logo{
             }
             .menu{
+                @media (max-width:768px) {
+                    display: none;
+                }
                 .menu__list{
                     display: flex;
                     align-items: center;
@@ -42,12 +49,18 @@
         }
 
         .banner__content{
+            display: flex;
+            flex-direction: column;
             padding: 0 75px;
-            padding-top: 130px;
-            margin: 0 auto;
+            margin: 130px auto 0;
             @media (max-width:1200px){
                 width: 984px;
-                padding: 158px 111px 0;
+                margin-top: 158px;
+            }
+            @media (max-width:768px){
+                width: 100%;
+                padding: 0;
+                margin-top: 50px;
             }
             p{
                 font-size: 24px;
@@ -58,6 +71,12 @@
                     line-height: 21px;
                     margin-top: 62px;
                 }
+                @media (max-width:768px){
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-top: 33px;
+                    padding: 0 15px;
+                }
             }
             .banner__btn{
                 display: flex;
@@ -65,6 +84,9 @@
                 padding: 82px 0 120px;
                 @media (max-width:1200px){
                     padding: 91px 0 126px;
+                }
+                @media (max-width:768px){
+                    padding: 51px 0 52px;
                 }
                 @include mixin_red__btn;
             }

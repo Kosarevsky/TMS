@@ -3,6 +3,9 @@
     @media (max-width:1200px){
         margin-top: 77px;
     }
+    @media (max-width:768px){
+        margin-top: 34px;
+    }
         &__title{
             font-weight: 500;
             font-size: 30px;
@@ -15,6 +18,11 @@
             padding: 18px 0;
             @media (max-width:1200px){
                 padding: 12px 0;
+            }
+            @media (max-width:768px){
+                padding: 19px 0;
+                font-size: 18px;
+                line-height: 21px;
             }
         }
         
@@ -33,6 +41,11 @@
                 font-size: 14px;
                 line-height: 16px;
             }
+            @media (max-width:768px) {
+                margin-top: 3px;
+                font-size: 13px;
+                line-height: 15px;
+            }
         }
 }
 
@@ -44,6 +57,7 @@
         margin: 45px 0 78px; 
     }
     @include mixin_red__btn;
-
-    
+}
+.download__btn .red__btn{
+    padding: 28px 0;
 }
