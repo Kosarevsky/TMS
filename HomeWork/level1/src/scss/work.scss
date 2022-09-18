@@ -10,16 +10,73 @@
         
     }
     .work__card{
+        position: relative;
         width: 100%;
         overflow: hidden;
-        img{
+        max-width: 400px;
+        
+        &__image{
             display: block;
             width: 100%;
+            height: auto;
             max-width: 378px;
             max-height: 340px;
             object-fit: cover;
         }
+
+        &__overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background: rgba(255, 67, 67, 0.8);
+            border: 2px solid #FFFFFF;
+
+            &:active{
+                background: rgba(185, 12, 12, 0.8);
+            }
+
+            &__text{
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            &__info{
+                margin-top: 110px;
+                &__title{
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+
+                &__text{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin-top: 21px;
+                }
+            }            
+        }
     }
 }
 
+.work__card:hover .work__card__overlay {
+    opacity: 0.8;
+}
 
