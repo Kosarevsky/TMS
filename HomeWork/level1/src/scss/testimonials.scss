@@ -3,7 +3,9 @@
     @media (max-width:1200px) {
         margin-top: 78px;
     }
-
+    @media (max-width:768px) {
+        margin-top: 0;
+    }
     &__content{
         display: flex;
         justify-content: center;
