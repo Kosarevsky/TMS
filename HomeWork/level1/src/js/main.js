@@ -1,29 +1,18 @@
   // import Swiper JS
-  import Swiper, { Navigation, Pagination } from 'swiper';
-
+  import Swiper, {Pagination} from 'swiper';
  // import styles bundle
- import 'swiper/swiper.min.css';
+ import 'swiper/swiper-bundle.min.css';
 
 const swiper = new Swiper('.swiper', {
     // configure Swiper to use modules
-    modules: [Navigation, Pagination],
-    // Optional parameters
-    direction: 'vertical',
+    modules: [Pagination],
     loop: true,
   
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+    //буллеты
+      clickable: true,
     },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+ 
   });

@@ -25,8 +25,17 @@
             img{
                 display: block;
                 width: 100%;
-                max-width: 741px;
                 object-fit: cover;
+                max-width: 741px;
+                max-height: 490px;
+                @media (max-width:1200px) {
+                    max-width: 502px;
+                    max-height: 332px;
+                }
+                @media (max-width:768px) {
+                    max-width: 320px;
+                    max-height: 212px;
+                }  
             }
         }
     
@@ -120,4 +129,13 @@
             }
         }
     }
+}
+
+
+.swiper-pagination-bullet{
+    width: 14px;
+    height: 15px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: red;
 }
