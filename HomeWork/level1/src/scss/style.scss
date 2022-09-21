@@ -89,7 +89,7 @@ p{
     @media (max-width:1200px) {
         width: 984px;
     }
-    @media (max-width:786px){
+    @media (max-width:768px){
         width: 320px;
         padding: 0 20px;
     }
@@ -103,3 +103,4 @@ p{
 @import 'testimonials';
 @import 'download';
 @import 'footer';
+@import 'burger'
