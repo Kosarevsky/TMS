@@ -17,6 +17,8 @@
             }
 
             &__logo{
+                z-index: 2;
+                position: fixed;
                 img{
                     display: block;
                     width: 187px;
