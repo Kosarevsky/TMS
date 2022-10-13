@@ -17,14 +17,15 @@
             }
 
             &__logo{
-                z-index: 2;
-                position: fixed;
+
                 img{
                     display: block;
                     width: 187px;
                     @media (max-width:768px) {
                         width: 102px;
                         height: 14px;
+                        z-index: 2;
+                        position: fixed;
                     }
                 }
             }
